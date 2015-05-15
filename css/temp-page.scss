@@ -19,7 +19,7 @@
 .hero a {
   color: $udg-darkblue;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   margin: 10px auto;
   display: inline-block;
 }
@@ -43,29 +43,107 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  max-width: 100%;
 }
+
+
+/*info-cards*/
+
+.info-card {
+  box-sizing: border-box;
+  max-width: 860px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background: #fff;
+  font-size: 18px;
+}
+
+.info-card.card-meetup {
+  position: relative;
+  z-index: 200;
+  margin-top: -50px;
+}
+
+.info-card h1 {
+  margin-top: 0px;
+  display: inline-block;
+}
+
+.info-card p {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.info-card .info-date,
+.info-card .info-location {
+  float: right;
+  margin-left: 20px;
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.info-card footer {
+  text-align: right;
+}
+
+.card-meetup i,
+.card-meetup h1 span {
+  color: $udg-purple;
+}
+
+.card-conf i,
+.card-conf h1 span {
+  color: $udg-blue;
+}
+
+.card-meetup .info-register {
+  background-color: $udg-purple;
+}
+
+.info-register {
+  font-weight: 700;
+  color: #fff;
+  padding: 15px 25px;
+  display: inline-block;
+  transition: 0.3s;
+
+  & i {
+    color: #fff;
+    margin-left: 5px;
+    font-size: 0px;
+    transition: 0.3s
+  }
+
+  &:hover {
+    text-decoration: none;
+    background-color: darken($udg-purple, 10%);
+
+    & i {
+      font-size: 18px;
+    }
+  }
+}
+
+.fb-join {
+  font-size: 16px;
+  color: $udg-purple;
+  margin-right: 10px;
+}
+
 
 /*form*/
-.form-wrap,
-.content-wrap {
-    position: relative;
-    z-index: 100;
-    margin: 0 auto;
-}
 
 form {
-    width: 65%;
-    text-align: center;
-    margin: 0 auto;
 }
 
 .form-success.scale-up {
-    -webkit-transform: scale(1);
+    transform: scale(1);
     opacity: 1;
 }
 
 .scale-down {
-    -webkit-transform: scale(0);
+    transform: scale(0);
     opacity: 0;
 }
 
@@ -83,7 +161,7 @@ form {
     margin-left: -115px;
     top: -5px;
     z-index: 40;
-    -webkit-transform: scale(0);
+    transform: scale(0);
     opacity: 0;
     transition: 0.3s;
 }
@@ -94,32 +172,36 @@ form {
 
 form input,
 form button {
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid #173c54;
-    height: 50px;
+    height: 55px;
+    padding: 15px 25px;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
     transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
     vertical-align: top;
     z-index: 50;
     position: relative;
-    -webkit-transform: scale(1);
+    transform: scale(1);
     opacity: 1;
+}
 
+form input {
+  background-color: #e8e8e8;
 }
 
 form button {
-    background-color: rgba(23, 60, 84, 1);
+    background-color: $udg-blue;
     color: #fff;
     line-height: 0;
-}
+    border: none;
+    padding: 10px 15px;
+    display: inline-block;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
 
-form button:hover {
-    background-color: #1f5375;
+    &:hover {
+      background: $udg-darkblue;
+      cursor: pointer;
+    }
 }
 
 form button:focus {
@@ -142,7 +224,7 @@ form input:focus {
 }
 
 
-footer {
+footer.service-info {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -152,8 +234,8 @@ footer {
     text-align: center;
 }
 
-footer p,
-footer p a {
+footer.service-info p,
+footer.service-info p a {
     display: inline-block;
     color: #fff;
     opacity: 0.8;
@@ -166,50 +248,11 @@ footer p a:hover {
 
 @media (max-width: 1280px) {
 
-    .content-wrap p {
-        font-size: 18px;
-    }
 }
 
 @media (max-width: 785px) {
 
-    .splash-image {
 
-        background-image: none;
-    }
-
-    .content-wrap {
-        margin-top: 10px;
-    }
-
-    .content-wrap p {
-        width: 80%;
-    }
-
-    form {
-        width: 80%;
-    }
-
-    form input {
-        width: 220px;
-        margin-top: 10px;
-    }
-
-    form input:focus {
-        width: 250px;
-    }
-
-    .form-success {
-        margin-left: -130px;
-    }
-
-    button {
-        margin-top: 10px;
-    }
-
-    footer {
-        position: relative;
-    }
 }
 
 .first-ani {

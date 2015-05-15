@@ -1,5 +1,10 @@
+$udg-blue: #3FA9F5;
+$udg-darkblue: #065D93;
+$udg-purple: #8D53A0;
+$udg-gray: #474747;
+
 html {
-    color: #222;
+    color: $udg-gray;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -21,6 +26,15 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /*

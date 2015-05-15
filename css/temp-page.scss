@@ -1,37 +1,57 @@
+/*header*/
+
+.hero {
+  height: 546px;
+  background: $udg-blue;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 250px;
+}
+
+.hero .udg-logo,
+.hero a,
+.hero p {
+  position: relative;
+  z-index: 100;
+}
+
+.hero a {
+  color: $udg-darkblue;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px auto;
+  display: inline-block;
+}
+
+.hero p {
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.15);
+  width: 560px;
+  margin: 20px auto;
+}
+
+.udg-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-image {
+  bottom: 0;
+  z-index: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*form*/
 .form-wrap,
 .content-wrap {
     position: relative;
     z-index: 100;
     margin: 0 auto;
 }
-
-.content-wrap {
-    margin-top: 100px;
-}
-
-.content-wrap p {
-    text-align: center;
-    font-size: 24px;
-    color: #fff;
-    text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
-    width: 65%;
-    margin: 50px auto;
-    opacity: 1;
-}
-
-.splash-image {
-    background-image: url('../img/par2.jpg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 110%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 50;
-}
-
 
 form {
     width: 65%;
@@ -164,7 +184,7 @@ footer p a:hover {
 
     .content-wrap p {
         width: 80%;
-    } 
+    }
 
     form {
         width: 80%;

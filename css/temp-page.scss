@@ -223,34 +223,84 @@ form input:focus {
     outline: none;
 }
 
+footer .sharka {
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+}
 
 footer.service-info {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    width: 300px;
-    margin-left: -150px;
+    min-width: 300px;
     z-index: 100;
     text-align: center;
+    margin: 0 auto;
 }
 
 footer.service-info p,
 footer.service-info p a {
     display: inline-block;
-    color: #fff;
-    opacity: 0.8;
+    margin: 10px;
 }
 
-footer p:hover,
-footer p a:hover {
-    opacity: 1;
-}
 
 @media (max-width: 1280px) {
 
 }
 
-@media (max-width: 785px) {
+@media (max-width: 1024px) {
+  .hero {
+    height: 400px;
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 786px) {
+  .hero {
+    height: auto;;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .hero p {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .info-card {
+    padding: 30px;
+  }
+
+  .fb-join {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .info-card footer {
+    text-align: center;
+  }
+
+  .info-card.card-meetup {
+    margin-top: 30px;
+  }
+
+  .info-card .info-date,
+  .info-card .info-location {
+    display: block;
+    float: none;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  form input {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
 
 
 }

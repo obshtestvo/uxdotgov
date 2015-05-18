@@ -172,6 +172,8 @@ form {
 
 .form-ui {
     transition: 0.3s;
+    transform: scale(1);
+    transform-origin:right;
 }
 
 form input,
@@ -183,8 +185,6 @@ form button {
     vertical-align: top;
     z-index: 50;
     position: relative;
-    transform: scale(1);
-    transform-origin:right;
     opacity: 1;
 }
 

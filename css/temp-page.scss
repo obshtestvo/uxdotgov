@@ -97,6 +97,10 @@
   color: $udg-blue;
 }
 
+.card-conf .form-success i {
+  color: #fff;
+}
+
 .card-meetup .info-register {
   background-color: $udg-purple;
 }
@@ -135,6 +139,7 @@
 /*form*/
 
 form {
+  position: relative;
 }
 
 .form-success.scale-up {
@@ -148,22 +153,21 @@ form {
 }
 
 .form-success {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 700;
     padding: 15px;
-    border-radius: 5px;
-    width: 230px;
     margin: 0 auto;
     background-color: #00c252;
     color: #fff;
     text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
-    position: absolute;
-    left: 50%;
-    margin-left: -115px;
-    top: -5px;
-    z-index: 40;
+    z-index: 340;
     transform: scale(0);
+    transform-origin: right;
     opacity: 0;
     transition: 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .form-ui {
@@ -180,6 +184,7 @@ form button {
     z-index: 50;
     position: relative;
     transform: scale(1);
+    transform-origin:right;
     opacity: 1;
 }
 
@@ -215,7 +220,6 @@ form button:active {
 form input {
     width: 280px;
     border-color: rgba(23, 60, 84, 0);
-
 }
 
 form input:focus {
@@ -223,10 +227,11 @@ form input:focus {
     outline: none;
 }
 
+
 footer .sharka {
   text-align: center;
-  display: block;
   margin: 30px auto;
+  display: block;
 }
 
 footer.service-info {
@@ -299,8 +304,11 @@ footer.service-info p a {
   form input {
     width: auto;
     margin-bottom: 20px;
-  }
 
+    &:focus {
+      width: auto;
+    }
+  }
 
 
 }

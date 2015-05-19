@@ -111,6 +111,7 @@
   padding: 15px 25px;
   display: inline-block;
   transition: 0.3s;
+  text-decoration: none;
 
   & i {
     color: #fff;
@@ -248,14 +249,15 @@ form input:focus {
 
 footer {
 
-  opacity: 0.75;
-
   &.service-info {
       min-width: 300px;
       z-index: 100;
       text-align: center;
       margin: 0 auto;
 
+      & p {
+        opacity: .75;
+      }
   }
 }
 

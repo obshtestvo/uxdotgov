@@ -39,14 +39,10 @@ hr {
 
 a {
   color: inherit;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 700;
   color: $udg-darkblue;
 
-}
-
-.service-info a:hover {
-  color: $udg-blue;
 }
 
 a:hover {

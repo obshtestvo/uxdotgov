@@ -231,12 +231,13 @@ form input:focus {
 /*footer things*/
 .foot-img {
   text-align: center;
-  margin: 30px auto;
+  margin: 65px auto;
   display: block;
 
   &.obshtestvo-logo {
     filter: grayscale(1);
     transition: 0.3s;
+    margin-bottom: 0px;
 
     &:hover {
       filter: grayscale(0);
@@ -246,17 +247,14 @@ form input:focus {
 
 footer {
 
+  opacity: 0.75;
+
   &.service-info {
       min-width: 300px;
       z-index: 100;
       text-align: center;
       margin: 0 auto;
 
-      & p,
-      & a {
-        display: inline-block;
-        margin: 10px;
-      }
   }
 }
 

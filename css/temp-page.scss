@@ -228,23 +228,36 @@ form input:focus {
 }
 
 
-footer .sharka {
+/*footer things*/
+.foot-img {
   text-align: center;
   margin: 30px auto;
   display: block;
+
+  &.obshtestvo-logo {
+    filter: grayscale(1);
+    transition: 0.3s;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
 }
 
-footer.service-info {
-    min-width: 300px;
-    z-index: 100;
-    text-align: center;
-    margin: 0 auto;
-}
+footer {
 
-footer.service-info p,
-footer.service-info p a {
-    display: inline-block;
-    margin: 10px;
+  &.service-info {
+      min-width: 300px;
+      z-index: 100;
+      text-align: center;
+      margin: 0 auto;
+
+      & p,
+      & a {
+        display: inline-block;
+        margin: 10px;
+      }
+  }
 }
 
 

@@ -16,12 +16,22 @@
   z-index: 100;
 }
 
-.hero a {
-  color: $udg-darkblue;
+.hero a, .hero a:active {
+  transition: 0.15s;
   font-size: 14px;
   font-weight: 700;
   margin: 10px auto;
   display: inline-block;
+}
+
+.hero a:hover, .hero a:focus {
+  color: lighten($udg-blue, 25%);
+  border-color: $udg-blue;
+}
+
+.hero a, .hero a:active {
+  color: $udg-darkblue;
+  border-color: lighten($udg-darkblue, 10%);
 }
 
 .hero p {
@@ -102,6 +112,7 @@
 }
 
 .card-meetup .info-register {
+  color:#fff;
   background-color: $udg-purple;
 }
 

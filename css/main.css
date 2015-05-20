@@ -257,7 +257,8 @@ textarea {
   font-weight: 700; }
 
 .info-card footer {
-  text-align: right; }
+  text-align: right;
+  color: #686868; }
 
 .card-meetup i,
 .card-meetup h1 span {
@@ -294,8 +295,7 @@ textarea {
 
 .fb-join {
   font-size: 16px;
-  color: #8D53A0;
-  margin-right: 10px; }
+  color: #8D53A0; }
 
 /*form*/
 form {

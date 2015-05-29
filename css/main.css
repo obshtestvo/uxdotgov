@@ -257,8 +257,7 @@ textarea {
   font-weight: 700; }
 
 .info-card footer {
-  text-align: right;
-  color: #686868; }
+  text-align: right; }
 
 .card-meetup i,
 .card-meetup h1 span {
@@ -295,7 +294,8 @@ textarea {
 
 .fb-join {
   font-size: 16px;
-  color: #8D53A0; }
+  color: #8D53A0;
+  margin-right: 10px; }
 
 /*form*/
 form {
@@ -382,7 +382,8 @@ form input:focus {
     height: 25px;
     filter: grayscale(1);
     transition: 0.3s;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    margin-top: 0; }
     .foot-img.obshtestvo-logo:hover {
       filter: grayscale(0); }
 
@@ -444,3 +445,5 @@ footer.service-info {
 
 .third-ani {
   animation: show-up-super-late 1.2s; }
+
+/*# sourceMappingURL=main.css.map */

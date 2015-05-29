@@ -251,6 +251,7 @@ form input:focus {
     filter: grayscale(1);
     transition: 0.3s;
     margin-bottom: 0px;
+    margin-top: 0;
 
     &:hover {
       filter: grayscale(0);

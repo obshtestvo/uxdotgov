@@ -241,33 +241,48 @@ form input:focus {
 
 
 /*footer things*/
+
 .foot-img {
   text-align: center;
   margin: 65px auto;
   display: block;
 
   &.obshtestvo-logo {
-    height:25px;
+    height: auto;
+    width: 160px;
     filter: grayscale(1);
     transition: 0.3s;
     margin-bottom: 0px;
     margin-top: 0;
-
-    &:hover {
-      filter: grayscale(0);
-    }
   }
 }
 
 footer {
+    &.info-card {
+        background-color: rgba(255, 255, 255, 0.4);
+        font-size: 14px;
+        opacity: 0.85;
+        transition: 0.35s;
+        & p {
+            margin-bottom: 0;
+        }
+    }
 
-  &.service-info {
+    &.service-info {
       min-width: 300px;
       z-index: 100;
       text-align: center;
       margin: 0 auto;
       color: #777;
-  }
+    }
+
+    &:hover {
+        opacity: 1;
+
+        & .obshtestvo-logo {
+            filter: grayscale(0);
+        }
+    }
 }
 
 

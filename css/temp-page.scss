@@ -59,6 +59,16 @@
 
 /*info-cards*/
 
+.separator {
+    content: '';
+    opacity: .6;
+    height: 50px;
+    width: 2px;
+    display: block;
+    margin: -10px auto;
+    border-left: 2px dashed gray;
+}
+
 .info-card {
   box-sizing: border-box;
   max-width: 860px;
@@ -66,12 +76,18 @@
   padding: 30px 40px;
   background: #fff;
   font-size: 18px;
+  position: relative;
+  z-index: 200;
 }
 
 .info-card.card-meetup {
-  position: relative;
-  z-index: 200;
-  margin-top: -50px;
+  &.meetup-may {
+      filter: grayscale(1);
+  }
+}
+
+.card-conf {
+    margin-top: -50px;
 }
 
 .info-card h1 {
@@ -99,12 +115,12 @@
 
 .card-meetup i,
 .card-meetup h1 span {
-  color: $udg-purple;
+  color: $udg-blue;
 }
 
 .card-conf i,
 .card-conf h1 span {
-  color: $udg-blue;
+  color: $udg-purple;
 }
 
 .card-conf .form-success i {
@@ -205,7 +221,7 @@ form input {
 }
 
 form button {
-    background-color: $udg-blue;
+    background-color: $udg-purple;
     color: #fff;
     line-height: 0;
     border: none;

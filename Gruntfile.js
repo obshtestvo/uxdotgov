@@ -63,8 +63,7 @@ var mozjpeg = require('imagemin-mozjpeg');
 
     open: {
       index: {
-        path: './index.html',
-        app: 'chrome'
+        path: './index.html'
       }
     },
 
